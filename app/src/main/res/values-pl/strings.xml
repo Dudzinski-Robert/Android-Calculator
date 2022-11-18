@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="simple">Prosty</string>
+    <string name="about">O mnie</string>
+    <string name="app_name">Kalkulator</string>
+    <string name="advanced">Zaawansowany</string>
+    <string name="error">Błąd</string>
+    <string name="tooBig">Zbyt duża wartość</string>
+    <string name="divisionByZero">Nie można dzielić przez zero</string>
+    <string name="calculator">Kalkulator</string>
+    <string name="version" translatable="false">v1.0</string>
+</resources>

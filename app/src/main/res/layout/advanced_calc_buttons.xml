@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="4">
+
+        <!--**************************************************-->
+        <!--*******************   ROW-0   ********************-->
+        <!--**************************************************-->
+        <android.widget.Button
+            android:id="@+id/btn_sin"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="sinButton"
+            android:text="sin()"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_cos"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="cosButton"
+            android:text="cos()"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_tan"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="tanButton"
+            android:text="tan()"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_ln"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="lnButton"
+            android:text="ln()"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_log"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="logButton"
+            android:text="log()"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <!--**************************************************-->
+        <!--*******************   ROW-1   ********************-->
+        <!--**************************************************-->
+        <android.widget.Button
+            android:id="@+id/btn_percent"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="percentButton"
+            android:text="%"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_c"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="clearDigit"
+            android:text="c"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_ac"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="clearAll"
+            android:text="ac"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_plus_minus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="signChangeButton"
+            android:text="+/-"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_division"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="divButton"
+            android:text="/"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+
+        <!--**************************************************-->
+        <!--*******************   ROW-2   ********************-->
+        <!--**************************************************-->
+        <android.widget.Button
+            android:id="@+id/btn_sqrt"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="sqrtButton"
+            android:text="√"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn7"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="sevenButton"
+            android:text="7"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn8"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="eightButton"
+            android:text="8"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn9"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="nineButton"
+            android:text="9"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_multiply"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="mulButton"
+            android:text="*"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <!--**************************************************-->
+        <!--*******************   ROW-3   ********************-->
+        <!--**************************************************-->
+        <android.widget.Button
+            android:id="@+id/btn_squared"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="pow2Button"
+            android:text="x²"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="fourButton"
+            android:text="4"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="fiveButton"
+            android:text="5"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn6"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="sixButton"
+            android:text="6"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_minus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="subButton"
+            android:text="-"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <!--**************************************************-->
+        <!--*******************   ROW-4   ********************-->
+        <!--**************************************************-->
+        <android.widget.Button
+            android:id="@+id/btn_powY"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="powYButton"
+            android:text="xʸ"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="oneButton"
+            android:text="1"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="twoButton"
+            android:text="2"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="threeButton"
+            android:text="3"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_plus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="addButton"
+            android:text="+"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+
+        <!--**************************************************-->
+        <!--*******************   ROW-5   ********************-->
+        <!--**************************************************-->
+        <android.widget.ImageButton
+            android:id="@+id/btn_change"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="backToHome"
+            android:shadowRadius="0"
+            android:src="@drawable/back_arrow"
+            android:textColor="@color/icon_color"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_pi"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="piButton"
+            android:text="𝝅"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn0"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="zeroButton"
+            android:text="0"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_point"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/black_background"
+            android:onClick="pointButton"
+            android:text=","
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_equal"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_columnWeight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="equalsButton"
+            android:text="="
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+
+    </GridLayout>
+</RelativeLayout>

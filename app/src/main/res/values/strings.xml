@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="simple">Simple</string>
+    <string name="about">About me</string>
+    <string name="advanced">Advanced</string>
+    <string name="error">Error</string>
+    <string name="tooBig">Too big value</string>
+    <string name="divisionByZero">Can\'t divide by zero</string>
+    <string name="calculator">Calculator</string>
+    <string name="version">v1.0</string>
+</resources>
