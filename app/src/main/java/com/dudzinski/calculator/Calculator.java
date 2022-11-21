@@ -1,14 +1,10 @@
 package com.dudzinski.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.annotation.SuppressLint;
 import android.util.Log;
 import java.io.Serializable;
 import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-import java.util.Locale;
 import java.util.Objects;
-import java.util.ResourceBundle;
 
 public class Calculator extends AppCompatActivity implements Serializable {
 
@@ -53,7 +49,11 @@ public class Calculator extends AppCompatActivity implements Serializable {
     public void setOperation(String operation){
         if(!Objects.equals(this.operation, "")) {
             Log.i("set operator", operation);
-            number1.setNumber(getResult());
+            try{
+                number1.setNumber(getResult());
+            } catch (Exception e){
+                number1.setError(true);
+            }
             number2.reset();
         }
 
@@ -182,16 +182,11 @@ public class Calculator extends AppCompatActivity implements Serializable {
         double result = calculate();
 
         DecimalFormat df = new DecimalFormat("#.########");
-
-//        df.setMaximumFractionDigits(getMaxNumberLength());
-//            df.setMaximumFractionDigits();
         int precision = getMaxNumberLength() - df.format(result).indexOf('.') - 1;
         if(result < 0)
             precision += 1;
-//        df.setMaximumFractionDigits(precision);
         long tmp = (long)Math.pow(10, precision);
         long newNumber = Math.round(result * tmp);
-
 
         return df.format((double) newNumber / tmp).replace(',','.');
     }
